@@ -21,73 +21,58 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <section class="hero-shell inner-page-hero about-page-hero">
-    <div class="hero-shell-overlay"></div>
+  <section class="about-hero">
+  <header class="hero-header">
+    <div class="container hero-header-inner">
 
-    <header class="hero-header">
-      <div class="container hero-header-inner">
-        <div class="hero-nav-center">
-          <nav class="hero-nav hero-nav-left">
-            <a href="about.html" aria-current="page">About</a>
-            <a href="services.html">Services</a>
-            <a href="portfolio.html">Portfolio</a>
-          </nav>
-
-          <a href="index.html" class="hero-brand" aria-label="Michel Karam Home">
-            <img src="assets/Logo/mk-monogram.png" alt="Michel Karam monogram" />
-          </a>
-
-          <nav class="hero-nav hero-nav-right">
-            <a href="awards.html">Awards</a>
-            <a href="press.html">Press</a>
-            <a href="contact.html">Contact</a>
-          </nav>
-        </div>
-
-        <a href="contact.html" class="hero-top-cta">Work With Me</a>
-
-        <button
-          class="nav-toggle hero-mobile-toggle"
-          id="navToggle"
-          aria-label="Open menu"
-          aria-expanded="false"
-        >
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-      </div>
-
-      <div class="container">
-        <nav class="mobile-hero-nav" id="siteNav">
+      <div class="hero-nav-center">
+        <nav class="hero-nav hero-nav-left">
           <a href="about.html" aria-current="page">About</a>
           <a href="services.html">Services</a>
           <a href="portfolio.html">Portfolio</a>
+        </nav>
+
+        <a href="index.html" class="hero-brand">
+          <img src="assets/Logo/mk-monogram.png" alt="Michel Karam">
+        </a>
+
+        <nav class="hero-nav hero-nav-right">
           <a href="awards.html">Awards</a>
           <a href="press.html">Press</a>
           <a href="contact.html">Contact</a>
         </nav>
       </div>
-    </header>
 
-    <div class="container inner-page-hero-stage">
-      <div class="inner-page-hero-copy reveal">
-        <p class="hero-kicker">Executive Chef & Culinary Consultant</p>
-        <h1>About Michel Karam</h1>
-        <p class="inner-page-hero-text">
-          Michel Karam brings together culinary refinement, disciplined leadership,
-          and a deep understanding of hospitality execution shaped by years in demanding,
-          high-standard kitchen environments.
-        </p>
+      <a href="contact.html" class="hero-top-cta">Work With Me</a>
 
-        <div class="inner-page-hero-actions">
-          <a href="services.html" class="hero-outline-btn">Explore Services</a>
-          <a href="portfolio.html" class="hero-text-link">View Portfolio</a>
-        </div>
+    </div>
+  </header>
+
+  <div class="container about-hero-grid">
+
+    <div class="about-hero-text">
+      <p class="hero-kicker">Executive Chef & Culinary Consultant</p>
+
+      <h1>About Michel Karam</h1>
+
+      <p class="about-hero-description">
+        Michel Karam brings together culinary refinement, disciplined leadership,
+        and a deep understanding of hospitality execution shaped by years in
+        demanding, high-standard kitchen environments.
+      </p>
+
+      <div class="about-hero-actions">
+        <a href="services.html" class="hero-outline-btn">Explore Services</a>
+        <a href="portfolio.html" class="hero-text-link">View Portfolio</a>
       </div>
     </div>
-  </section>
 
+    <div class="about-hero-image">
+      <img src="assets/Chef/michel-karam-culinary-brigade-leadership.png" alt="Michel Karam with culinary team">
+    </div>
+
+  </div>
+</section>
   <main>
     <!-- STORY -->
     <section class="section section-paper about-story-section">
@@ -176,7 +161,7 @@
             <div class="philosophy-image-stack">
               <div class="philosophy-image-large">
                 <img
-                  src="assets/Chef/michel-karam-culinary-demonstration.png"
+                  src="assets/Chef/michel-karam-kitchen-plating-team.png"
                   alt="Michel Karam working in a professional kitchen"
                 />
               </div>

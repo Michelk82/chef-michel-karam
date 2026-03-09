@@ -2305,3 +2305,92 @@ textarea {
     width: fit-content;
   }
 }
+/* ABOUT HERO */
+
+.about-hero{
+  background:
+    linear-gradient(
+      90deg,
+      rgba(20,20,20,0.92) 0%,
+      rgba(20,20,20,0.85) 40%,
+      rgba(20,20,20,0.75) 100%
+    ),
+    url("assets/Backgrounds/stone-texture.jpg");
+    
+  background-size: cover;
+  background-position: center;
+  
+  padding-top:120px;
+  padding-bottom:60px;
+}
+
+/* GRID */
+
+.about-hero-grid{
+  display:grid;
+  grid-template-columns:1fr 420px;
+  align-items:center;
+  gap:50px;
+}
+
+/* TEXT */
+
+.about-hero-text{
+  max-width:520px;
+}
+
+.about-hero-text h1{
+  font-family:var(--font-heading);
+  font-size:44px;
+  color:#D4AF37;
+  margin-bottom:16px;
+}
+
+.about-hero-description{
+  color:#e3e3e3;
+  line-height:1.8;
+  margin-bottom:24px;
+  font-size:15px;
+}
+
+/* BUTTONS */
+
+.about-hero-actions{
+  display:flex;
+  gap:18px;
+}
+
+/* IMAGE */
+
+.about-hero-image{
+  display:flex;
+  justify-content:flex-end;
+}
+
+.about-hero-image img{
+  width:100%;
+  max-width:420px;
+  height:340px;
+  object-fit:cover;
+  border-radius:8px;
+  box-shadow:0 15px 40px rgba(0,0,0,0.35);
+}
+
+/* MOBILE */
+
+@media (max-width:900px){
+
+  .about-hero-grid{
+    grid-template-columns:1fr;
+    gap:30px;
+  }
+
+  .about-hero-image{
+    justify-content:center;
+  }
+
+  .about-hero-image img{
+    height:280px;
+  }
+
+}
