@@ -2524,45 +2524,6 @@ textarea {
   line-height: 1.85;
 }
 
-/* CTA */
-
-.services-cta-section {
-  padding-top: 92px;
-  padding-bottom: 92px;
-}
-
-.services-cta-panel {
-  max-width: 920px;
-  margin: 0 auto;
-  text-align: center;
-  padding: 42px 36px;
-  border: 1px solid rgba(200, 161, 114, 0.16);
-  background:
-    linear-gradient(
-      180deg,
-      rgba(255, 255, 255, 0.04) 0%,
-      rgba(255, 255, 255, 0.015) 100%
-    ),
-    linear-gradient(
-      135deg,
-      rgba(200, 161, 114, 0.06) 0%,
-      rgba(200, 161, 114, 0.015) 100%
-    );
-}
-
-.services-cta-text {
-  max-width: 700px;
-  margin-inline: auto;
-}
-
-.services-cta-actions {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 14px;
-  flex-wrap: wrap;
-  margin-top: 20px;
-}
 
 /* RESPONSIVE */
 
@@ -2640,10 +2601,7 @@ textarea {
   .services-intro-section,
   .services-process-section,
   .services-audience-section,
-  .services-cta-section {
-    padding-top: 74px;
-    padding-bottom: 74px;
-  }
+  
 
   .service-card,
   .process-step,
