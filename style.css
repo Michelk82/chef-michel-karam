@@ -2214,7 +2214,9 @@ textarea {
   width: 100%;
 }
 
-/* SERVICES HERO */
+/* SERVICES HERO
+   Same structure and spacing logic as ABOUT HERO
+*/
 
 .services-hero {
   position: relative;
@@ -2222,18 +2224,18 @@ textarea {
   background:
     linear-gradient(
       90deg,
-      rgba(74, 55, 49, 0.18) 0%,
-      rgba(45, 33, 31, 0.14) 100%
+      rgba(65, 46, 40, 0.78) 0%,
+      rgba(58, 41, 36, 0.82) 50%,
+      rgba(50, 36, 33, 0.86) 100%
     ),
     linear-gradient(
-      90deg,
-      rgba(40, 29, 27, 0.88) 0%,
-      rgba(48, 35, 32, 0.82) 42%,
-      rgba(50, 36, 33, 0.78) 100%
+      180deg,
+      rgba(74, 55, 49, 0.14) 0%,
+      rgba(45, 33, 31, 0.10) 100%
     ),
     url("assets/Backgrounds/stone-texture.jpg") center/cover no-repeat;
-  padding-top: 74px;
-  padding-bottom: 22px;
+  padding-top: 10px;
+  padding-bottom: 52px;
 }
 
 .services-hero::before {
@@ -2241,57 +2243,60 @@ textarea {
   position: absolute;
   inset: 0;
   background:
+    radial-gradient(circle at 16% 18%, rgba(200, 161, 114, 0.06), transparent 22%),
+    radial-gradient(circle at 82% 72%, rgba(255, 255, 255, 0.03), transparent 20%),
     linear-gradient(
       180deg,
-      rgba(255, 255, 255, 0.035) 0%,
+      rgba(255, 255, 255, 0.04) 0%,
       rgba(255, 255, 255, 0.01) 100%
     );
+  mix-blend-mode: screen;
   pointer-events: none;
 }
 
 .services-hero .hero-header {
   position: relative;
-  z-index: 3;
+  z-index: 5;
 }
 
 .services-hero-grid {
   position: relative;
-  z-index: 2;
+  z-index: 4;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 320px;
+  grid-template-columns: minmax(0, 1fr) 380px;
   align-items: center;
-  gap: 28px;
-  min-height: 190px;
-  padding-top: 10px;
+  gap: 42px;
+  min-height: 300px;
+  padding-top: 18px;
 }
 
 .services-hero-text {
-  max-width: 560px;
+  max-width: 620px;
 }
 
 .services-hero-text h1 {
   font-family: var(--font-heading);
   font-weight: 500;
-  font-size: clamp(2.15rem, 3.8vw, 3.4rem);
-  line-height: 1.02;
+  font-size: clamp(2.35rem, 4vw, 4rem);
+  line-height: 0.98;
   letter-spacing: 0.005em;
-  color: #e1c39a;
-  margin-bottom: 14px;
-  text-shadow: 0 2px 18px rgba(0, 0, 0, 0.18);
+  color: #d6b88c;
+  margin-bottom: 18px;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.18);
 }
 
 .services-hero-description {
-  color: rgba(255, 255, 255, 0.84);
-  line-height: 1.72;
-  margin-bottom: 14px;
-  font-size: 0.97rem;
-  max-width: 33rem;
+  max-width: 620px;
+  color: rgba(255, 255, 255, 0.86);
+  font-size: 1rem;
+  line-height: 1.9;
+  margin-bottom: 24px;
 }
 
 .services-hero-actions {
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 18px;
   flex-wrap: wrap;
 }
 
@@ -2299,7 +2304,7 @@ textarea {
   color: #e6cfaa;
   text-transform: uppercase;
   letter-spacing: 0.14em;
-  font-size: 0.72rem;
+  font-size: 0.74rem;
   position: relative;
 }
 
@@ -2320,13 +2325,13 @@ textarea {
 
 .services-hero-image img {
   width: 100%;
-  max-width: 320px;
-  height: 190px;
+  max-width: 380px;
+  height: 300px;
   object-fit: cover;
   object-position: center;
-  border-radius: 8px;
-  border: 1px solid rgba(212, 175, 55, 0.22);
-  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.28);
+  border-radius: 10px;
+  border: 1px solid rgba(212, 175, 55, 0.25);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.35);
 }
 
 /* INTRO */
@@ -2573,13 +2578,14 @@ textarea {
 
 @media (max-width: 900px) {
   .services-hero {
-    padding-top: 88px;
-    padding-bottom: 30px;
+    padding-top: 10px;
+    padding-bottom: 42px;
   }
 
   .services-hero-grid {
-    gap: 24px;
+    gap: 28px;
     min-height: auto;
+    padding-top: 12px;
   }
 
   .services-hero-image {
@@ -2588,7 +2594,7 @@ textarea {
 
   .services-hero-image img {
     max-width: 100%;
-    height: 220px;
+    height: 260px;
   }
 
   .services-card-grid,
