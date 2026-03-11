@@ -2494,6 +2494,97 @@ textarea {
   line-height: 1.78;
 }
 
+/* SERVICES QUOTE BAND */
+
+.services-quote-band {
+  padding-top: 68px;
+  padding-bottom: 68px;
+  overflow: hidden;
+}
+
+.services-quote-inner {
+  max-width: 920px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.services-quote-eyebrow {
+  color: rgba(212, 177, 132, 0.75);
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.72rem;
+  margin-bottom: 18px;
+}
+
+.services-quote-lines {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin-bottom: 24px;
+}
+
+.services-quote-lines span {
+  display: block;
+  width: 72px;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    rgba(212, 177, 132, 0.18) 0%,
+    rgba(212, 177, 132, 0.7) 50%,
+    rgba(212, 177, 132, 0.18) 100%
+  );
+}
+
+.services-quote-block {
+  margin: 0;
+}
+
+.services-quote-text {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  font-size: clamp(2rem, 3.1vw, 2.9rem);
+  line-height: 1.22;
+  color: #ead7b0;
+  max-width: 18ch;
+  margin: 0 auto 18px;
+}
+
+.services-quote-credit {
+  color: rgba(255, 255, 255, 0.66);
+  font-size: 0.9rem;
+  letter-spacing: 0.04em;
+}
+
+.services-quote-credit em {
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.78);
+}
+
+@media (max-width: 560px) {
+  .services-quote-band {
+    padding-top: 54px;
+    padding-bottom: 54px;
+  }
+
+  .services-quote-lines {
+    margin-bottom: 18px;
+  }
+
+  .services-quote-lines span {
+    width: 48px;
+  }
+
+  .services-quote-text {
+    font-size: 1.7rem;
+    max-width: 100%;
+  }
+
+  .services-quote-credit {
+    font-size: 0.82rem;
+  }
+}
+
 /* AUDIENCE */
 
 .services-audience-section {
