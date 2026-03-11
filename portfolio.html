@@ -1,1 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <title>Portfolio | Michel Karam</title>
+  <meta
+    name="description"
+    content="Explore the culinary portfolio of Michel Karam, featuring signature dishes, seafood, meat, starters, pastry, banquets, buffets, and live stations."
+  />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Lato:wght@300;400;700&family=Playfair+Display:wght@500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <section class="portfolio-hero">
+    <header class="hero-header">
+      <div class="container hero-header-inner">
+        <div class="hero-nav-center">
+          <nav class="hero-nav hero-nav-left">
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="portfolio.html" aria-current="page">Portfolio</a>
+          </nav>
+
+          <a href="index.html" class="hero-brand" aria-label="Michel Karam Home">
+            <img src="assets/Logo/mk-monogram.png" alt="Michel Karam monogram" />
+          </a>
+
+          <nav class="hero-nav hero-nav-right">
+            <a href="awards.html">Awards</a>
+            <a href="press.html">Press</a>
+            <a href="contact.html">Contact</a>
+          </nav>
+        </div>
+
+        <button
+          class="nav-toggle hero-mobile-toggle"
+          id="navToggle"
+          aria-label="Open menu"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+      <div class="container">
+        <nav class="mobile-hero-nav" id="siteNav">
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="portfolio.html" aria-current="page">Portfolio</a>
+          <a href="awards.html">Awards</a>
+          <a href="press.html">Press</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="container portfolio-hero-grid">
+      <div class="portfolio-hero-text reveal">
+        <p class="hero-kicker">Culinary Portfolio</p>
+        <h1>Portfolio</h1>
+        <p class="portfolio-hero-description">
+          A curated selection of Michel Karam’s culinary work across refined plating,
+          premium hospitality presentation, pastry, banqueting, and live culinary execution.
+        </p>
+
+        <div class="portfolio-hero-actions">
+          <a href="#signature-dishes" class="hero-text-link">Explore Categories</a>
+        </div>
+      </div>
+
+      <div class="portfolio-hero-image reveal">
+        <img
+          src="assets/Signature_Dishes/michel-karam-garden-plating.png"
+          alt="Michel Karam signature plated dish"
+        />
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <!-- INTRO -->
+    <section class="section section-paper portfolio-intro-section">
+      <div class="container">
+        <div class="portfolio-intro-grid">
+          <div class="portfolio-intro-copy reveal">
+            <p class="eyebrow eyebrow-dark">Selected Work</p>
+            <h2 class="section-title section-title-dark">
+              A visual expression of refinement, discipline, and culinary identity
+            </h2>
+
+            <p class="section-text section-text-dark">
+              This portfolio presents a curated view of Michel Karam’s culinary work
+              across multiple formats, from signature plated dishes to pastry, banquets,
+              seafood, and live stations.
+            </p>
+
+            <p class="section-text section-text-dark">
+              Each category reflects a balance of creativity, structure, and hospitality
+              standards shaped for premium dining environments.
+            </p>
+          </div>
+
+          <div class="portfolio-intro-aside reveal">
+            <nav class="portfolio-category-nav" aria-label="Portfolio Categories">
+              <a href="#signature-dishes">Signature Dishes</a>
+              <a href="#seafood">Seafood</a>
+              <a href="#meat">Meat</a>
+              <a href="#starters">Starters</a>
+              <a href="#pastry">Pastry</a>
+              <a href="#banquets-buffets">Banquets & Buffets</a>
+              <a href="#live-stations">Live Stations</a>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SIGNATURE DISHES -->
+    <section class="section section-paper portfolio-category-section" id="signature-dishes">
+      <div class="container">
+        <div class="portfolio-section-heading reveal">
+          <p class="eyebrow eyebrow-dark">Category 01</p>
+          <h2 class="section-title section-title-dark">Signature Dishes</h2>
+          <p class="section-text section-text-dark portfolio-section-intro">
+            Composed plates that reflect Michel Karam’s visual language, ingredient sensitivity,
+            and fine-dining approach to presentation.
+          </p>
+        </div>
+
+        <div class="portfolio-grid signature-grid">
+          <figure class="portfolio-card portfolio-card-large reveal">
+            <img src="assets/Signature_Dishes/michel-karam-garden-plating.png" alt="Signature dish with artistic garden plating" />
+          </figure>
+          <figure class="portfolio-card reveal">
+            <img src="assets/Signature_Dishes/michel-karam-modern-meat-plating.png" alt="Modern signature meat plating" />
+          </figure>
+          <figure class="portfolio-card reveal">
+            <img src="assets/Signature_Dishes/michel-karam-beetroot-plating.png" alt="Beetroot signature plating" />
+          </figure>
+          <figure class="portfolio-card reveal">
+            <img src="assets/Signature_Dishes/michel-karam-herb-salad-crispy-root.png" alt="Herb salad and crispy root signature dish" />
+          </figure>
+          <figure class="portfolio-card reveal">
+            <img src="assets/Signature_Dishes/michel-karam-art-dessert-plating.png" alt="Artistic plated dessert" />
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEAFOOD -->
+    <section class="section section-stone portfolio-category-section" id="seafood">
+      <div class="container">
+        <div class="portfolio-section-heading center reveal">
+          <p class="eyebrow">Category 02</p>
+          <h2 class="section-title">Seafood</h2>
+          <p class="section-text portfolio-section-intro">
+            Seafood preparations ranging from elegant plated compositions to premium sharing displays.
+          </p>
+        </div>
+
+        <div class="portfolio-grid portfolio-grid-three dark-grid">
+          <figure class="portfolio-card reveal">
+            <img src="assets/Seafood/michel-karam-oyster-seaweed-plating-bright.png" alt="Oyster and seaweed plated seafood dish" />
+          </figure>
+          <figure class="portfolio-card reveal">
+            <img src="assets/Seafood/michel-karam-caviar-veloute-plating.png" alt="Seafood caviar veloute plating" />
+          </figure>
+          <figure class="portfolio-card reveal">
+            <img src="assets/Seafood/michel-karam-crusted-fish-veloute.png" alt="Crusted fish with veloute" />
+          </figure>
+          <figure class="portfolio-card reveal">
+            <img src="assets/Seafood/michel-karam-octopus-salad-modern.png" alt="Modern octopus salad" />
+          </figure>
+          <figure class="portfolio-card reveal">
+            <img src="assets/Seafood/michel-karam-oyster-veloute-plating.png" alt="Oyster veloute plating" />
+          </figure>
+          <figure class="portfolio-card reveal">
+            <img src="assets/Seafood/michel-karam-seafood-paella-platter.png" alt="Seafood paella platter" />
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- MEAT -->
+    <section class="section section-paper portfolio-category-section" id="meat">
+      <div class="container">
+        <div class="portfolio-section-heading reveal">
+          <p class="eyebrow eyebrow-dark">Category 03</p>
+          <h2 class="section-title section-title-dark">Meat</h2>
+          <p class="section-text section-text-dark portfolio-section-intro">
+            Refined meat presentations shaped by balance, depth, and clean execution.
+          </p>
+        </div>
+
+        <div class="portfolio-grid portfolio-grid-three">
+          <figure class="portfolio-card reveal">
+            <img src="assets/Meat/beef_signature_edited.png" alt="Signature beef plating" />
+          </figure>
+          <figure class="portfolio-card reveal">
+            <img src="assets/Meat/michel-karam-fine-dining-meat-plating-02.png" alt="Fine dining meat plating" />
+          </figure>
+          <figure class="portfolio-card reveal">
+            <img src="assets/Meat/michel-karam-roasted-chicken-plating.jpg" alt="Roasted chicken plating" />
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUOTE BAND -->
+    <section class="section section-stone portfolio-quote-band">
+      <div class="container">
+        <div class="portfolio-quote-inner reveal">
+          <p class="portfolio-quote-eyebrow">Michel Karam Portfolio</p>
+          <blockquote class="portfolio-quote-text">
+            Presentation is never separate from hospitality. It is part of how the experience is understood, remembered, and valued.
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- STARTERS -->
+    <section class="section section-paper portfolio-category-section" id="starters">
+      <div class="container">
+        <div class="portfolio-section-heading reveal">
+          <p class="eyebrow eyebrow-dark">Category 04</p>
+          <h2 class="section-title section-title-dark">Starters</h2>
+          <p class="section-text section-text-dark portfolio-section-intro">
+            A selection of starters and mezze-style preparations with attention to freshness, color, and presentation.
+          </p>
+        </div>
+
+        <div class="portfolio-grid portfolio-grid-three">
+          <figure class="portfolio-card reveal">
+            <img src="assets/Starters/michel-karam-salmon-caviar-canape.png" alt="Salmon caviar canapé" />
+          </figure>
+          <figure class="portfolio-card reveal">
+            <img src="assets/Starters/michel-karam-shrimp-avocado-mousse.png" alt="Shrimp avocado mousse starter" />
+          </figure>
+          <figure class="portfolio-card reveal">
+            <img src="assets/Starters/michel-karam-vegetable-gazpacho-shots.png" alt="Vegetable gazpacho shots" />
+          </figure>
+          <figure class="portfolio-card reveal">
+            <img src="assets/Starters/michel-karam-salmon-amuse-bouche.png" alt="Salmon amuse bouche" />
+          </figure>
+          <figure class="portfolio-card reveal">
+            <img src="assets/Starters/michel-karam-shrimp-hummus-signature.png" alt="Shrimp hummus signature starter" />
+          </figure>
+          <figure class="portfolio-card reveal">
+            <img src="assets/Starters/michel-karam-stuffed-grape-leaves-mezze.png" alt="Stuffed grape leaves mezze" />
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- PASTRY -->
+    <section class="section section-stone portfolio-category-section" id="pastry">
+      <div class="container">
+        <div class="portfolio-section-heading center reveal">
+          <p class="eyebrow">Category 05</p>
+          <h2 class="section-title">Pastry</h2>
+          <p class="section-text portfolio-section-intro">
+            Modern pastry work, plated desserts, entremets, and decorative showpieces.
+          </p>
+        </div>
+
+        <div class="portfolio-grid portfolio-grid-three dark-grid">
+          <figure class="portfolio-card reveal">
+            <img src="assets/Pastry/michel-karam-chocolate-entremet-modern-pastry.png" alt="Chocolate entremet pastry" />
+          </figure>
+          <figure class="portfolio-card reveal">
+            <img src="assets/Pastry/michel-karam-dessert-plating-modern.png" alt="Modern plated dessert" />
+          </figure>
+          <figure class="portfolio-card reveal">
+            <img src="assets/Pastry/michel_karam_artistic_entremet_cake.png" alt="Artistic entremet cake" />
+          </figure>
+          <figure class="portfolio-card reveal">
+            <img src="assets/Pastry/michel_karam_modern_sphere_dessert_edited.png" alt="Modern sphere dessert" />
+          </figure>
+          <figure class="portfolio-card reveal">
+            <img src="assets/Pastry/michel-karam-dessert-plating-art.png" alt="Art dessert plating" />
+          </figure>
+          <figure class="portfolio-card reveal">
+            <img src="assets/Pastry/michel-karam-sugar-showpiece-petit-fours.png" alt="Sugar showpiece and petit fours" />
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- BANQUETS -->
+    <section class="section section-paper portfolio-category-section" id="banquets-buffets">
+      <div class="container">
+        <div class="portfolio-section-heading reveal">
+          <p class="eyebrow eyebrow-dark">Category 06</p>
+          <h2 class="section-title section-title-dark">Banquets & Buffets</h2>
+          <p class="section-text section-text-dark portfolio-section-intro">
+            Large-format presentation, buffet styling, banquet execution, and hospitality display work.
+          </p>
+        </div>
+
+        <div class="portfolio-grid portfolio-grid-three">
+          <figure class="portfolio-card reveal">
+            <img src="assets/Banquets_Buffets/michel-karam-cold-buffet-display.png" alt="Cold buffet display" />
+          </figure>
+          <figure class="portfolio-card reveal">
+            <img src="assets/Banquets_Buffets/michel-karam-dessert-buffet-catering.png" alt="Dessert buffet catering" />
+          </figure>
+          <figure class="portfolio-card reveal">
+            <img src="assets/Banquets_Buffets/michel-karam-mezze-spread-modern.png" alt="Modern mezze spread" />
+          </figure>
+          <figure class="portfolio-card reveal">
+            <img src="assets/Banquets_Buffets/michel-karam-fruit-dessert-buffet.png" alt="Fruit dessert buffet" />
+          </figure>
+          <figure class="portfolio-card reveal">
+            <img src="assets/Banquets_Buffets/michel-karam-terrine-display.png" alt="Terrine display" />
+          </figure>
+          <figure class="portfolio-card reveal">
+            <img src="assets/Banquets_Buffets/michel-karam-banquet-plating-execution.png" alt="Banquet plating execution" />
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- LIVE STATIONS -->
+    <section class="section section-stone portfolio-category-section" id="live-stations">
+      <div class="container">
+        <div class="portfolio-section-heading center reveal">
+          <p class="eyebrow">Category 07</p>
+          <h2 class="section-title">Live Stations</h2>
+          <p class="section-text portfolio-section-intro">
+            Energy, showmanship, and culinary interaction in live-service environments.
+          </p>
+        </div>
+
+        <div class="portfolio-grid portfolio-grid-three dark-grid">
+          <figure class="portfolio-card reveal">
+            <img src="assets/Live_Stations/michel-karam-parmesan-wheel-live-station.png" alt="Parmesan wheel live station" />
+          </figure>
+          <figure class="portfolio-card reveal">
+            <img src="assets/Live_Stations/michel-karam-modern-plating-smoke-cone.png" alt="Modern plating live station with smoke cone" />
+          </figure>
+          <figure class="portfolio-card reveal">
+            <img src="assets/Live_Stations/michel-karam-kitchen-plating-team.png" alt="Kitchen plating team during live execution" />
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- CLOSING -->
+    <section class="section section-paper portfolio-closing-section">
+      <div class="container">
+        <div class="portfolio-closing-inner reveal">
+          <p class="eyebrow eyebrow-dark">Culinary Portfolio</p>
+          <h2 class="section-title section-title-dark">For collaborations, hospitality projects, and full portfolio inquiries</h2>
+          <p class="section-text section-text-dark portfolio-closing-text">
+            Michel Karam’s culinary work spans plated dining, pastry, live stations, buffet design, and large-scale hospitality presentation shaped for premium environments.
+          </p>
+          <a href="contact.html" class="btn btn-dark">Get in Touch</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="assets/Logo/michel-karam-hero-logo.png" alt="Michel Karam logo" />
+      </div>
+
+      <div class="footer-links">
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="awards.html">Awards</a>
+        <a href="press.html">Press</a>
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <p class="footer-copy">© Michel Karam. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
