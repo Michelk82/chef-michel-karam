@@ -4114,6 +4114,11 @@ height:340px;
     max-width: 100%;
   }
 }
+.press-feature-copy-centered {
+  max-width: 760px;
+  margin: 0 auto;
+  text-align: center;
+}
 /* =========================================================
    CONTACT PAGE
 ========================================================= */
