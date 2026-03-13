@@ -163,60 +163,60 @@
           </div>
 
          <div class="contact-form-panel reveal">
-  <form class="contact-form" action="https://formspree.io/f/xbdzkjdw" method="POST">
+ <form class="contact-form" action="https://formspree.io/f/xbdzkjdw" method="POST">
 
-    <input type="hidden" name="_subject" value="Michel Karam Website Inquiry">
-    <input type="hidden" name="_captcha" value="false">
+  <!-- Formspree settings -->
+  <input type="hidden" name="_subject" value="Michel Karam Website Inquiry">
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_next" value="https://chassislb.github.io/chef-michel-karam/contact.html">
 
-    <div class="contact-form-row">
-      <div class="form-group">
-        <label for="name">Full Name</label>
-        <input type="text" id="name" name="name" placeholder="Your name" required />
-      </div>
+  <!-- Honeypot spam protection -->
+  <input type="text" name="_gotcha" style="display:none">
 
-      <div class="form-group">
-        <label for="email">Email Address</label>
-        <input type="email" id="email" name="email" placeholder="Your email" required />
-      </div>
-    </div>
-
-    <div class="contact-form-row">
-      <div class="form-group">
-        <label for="company">Company / Brand</label>
-        <input type="text" id="company" name="company" placeholder="Company or brand name" />
-      </div>
-
-      <div class="form-group">
-        <label for="inquiry">Inquiry Type</label>
-        <select id="inquiry" name="inquiry">
-          <option value="">Select an inquiry type</option>
-          <option>Executive Chef Opportunity</option>
-          <option>Culinary Consulting</option>
-          <option>Hospitality Project</option>
-          <option>Professional Collaboration</option>
-          <option>Other</option>
-        </select>
-      </div>
+  <div class="contact-form-row">
+    <div class="form-group">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" placeholder="Your name" required>
     </div>
 
     <div class="form-group">
-      <label for="subject">Subject</label>
-      <input type="text" id="subject" name="subject" placeholder="Subject" required />
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" placeholder="Your email" required>
+    </div>
+  </div>
+
+  <div class="contact-form-row">
+    <div class="form-group">
+      <label for="company">Company / Brand</label>
+      <input type="text" id="company" name="company" placeholder="Company or brand name">
     </div>
 
     <div class="form-group">
-      <label for="message">Message</label>
-      <textarea
-        id="message"
-        name="message"
-        rows="7"
-        placeholder="Tell us about your inquiry"
-        required
-      ></textarea>
+      <label for="inquiry">Inquiry Type</label>
+      <select id="inquiry" name="inquiry">
+        <option value="">Select an inquiry type</option>
+        <option>Executive Chef Opportunity</option>
+        <option>Culinary Consulting</option>
+        <option>Hospitality Project</option>
+        <option>Professional Collaboration</option>
+        <option>Other</option>
+      </select>
     </div>
+  </div>
 
-    <button type="submit" class="btn btn-light">Send Inquiry</button>
-  </form>
+  <div class="form-group">
+    <label for="subject">Subject</label>
+    <input type="text" id="subject" name="subject" placeholder="Subject" required>
+  </div>
+
+  <div class="form-group">
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="7" placeholder="Tell us about your inquiry" required></textarea>
+  </div>
+
+  <button type="submit" class="btn btn-light">Send Inquiry</button>
+
+</form>
 </div>
 </div>
 </div>
