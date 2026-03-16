@@ -1778,6 +1778,43 @@ textarea {
   margin-top: 24px;
 }
 
+/* QUOTE BAND */
+
+.quote-band {
+  padding-top: 88px;
+  padding-bottom: 88px;
+}
+
+.quote-band-inner {
+  max-width: 860px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.quote-band-inner .eyebrow {
+  margin-bottom: 18px;
+}
+
+.quote-band-text {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-weight: 500;
+  font-size: clamp(2rem, 3.2vw, 3.25rem);
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+  color: #4f3f35;
+  text-wrap: balance;
+}
+
+.quote-band-signature {
+  margin-top: 20px;
+  color: #8c6c44;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
 /* ---------- RESPONSIVE ---------- */
 
 @media (max-width: 1260px) {
@@ -2102,6 +2139,16 @@ textarea {
   .section {
     padding: 84px 0;
   }
+
+  .quote-band {
+    padding-top: 68px;
+    padding-bottom: 68px;
+  }
+
+  .quote-band-text {
+    font-size: 1.8rem;
+    line-height: 1.28;
+  }
 }
 
 @media (max-width: 560px) {
@@ -2299,6 +2346,21 @@ textarea {
 
   .footer-title {
     font-size: 2.2rem;
+  }
+
+  .quote-band {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+
+  .quote-band-text {
+    font-size: 1.45rem;
+    line-height: 1.34;
+  }
+
+  .quote-band-signature {
+    font-size: 0.68rem;
+    letter-spacing: 0.14em;
   }
 }
 
