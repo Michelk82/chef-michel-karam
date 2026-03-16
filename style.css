@@ -4448,6 +4448,8 @@ height:340px;
   font: inherit;
   outline: none;
   border-radius: 0;
+  box-shadow: none;
+  transition: border-color 0.24s ease, background-color 0.24s ease;
 }
 
 .form-group input::placeholder,
@@ -4459,11 +4461,66 @@ height:340px;
 .form-group select:focus,
 .form-group textarea:focus {
   border-color: rgba(212, 177, 132, 0.42);
+  background: rgba(255, 255, 255, 0.055);
 }
 
 .form-group textarea {
   resize: vertical;
   min-height: 160px;
+}
+
+/* SELECT FIX */
+
+.form-group select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.04) 0%,
+      rgba(255, 255, 255, 0.03) 100%
+    ),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%23d4b184' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+  background-repeat: no-repeat, no-repeat;
+  background-position: center, right 14px center;
+  background-size: auto, 14px;
+  padding-right: 46px;
+  color: #f5efe6;
+}
+
+.form-group select option {
+  background-color: #4a3530;
+  color: #f5efe6;
+}
+
+.form-group select option:hover,
+.form-group select option:focus,
+.form-group select option:checked {
+  background-color: #6a4d42;
+  color: #fff7ec;
+}
+
+/* remove ugly default focus in some browsers */
+.form-group select::-ms-expand {
+  display: none;
+}
+
+/* AUTOFILL FIX */
+
+.form-group input:-webkit-autofill,
+.form-group input:-webkit-autofill:hover,
+.form-group input:-webkit-autofill:focus,
+.form-group textarea:-webkit-autofill,
+.form-group textarea:-webkit-autofill:hover,
+.form-group textarea:-webkit-autofill:focus,
+.form-group select:-webkit-autofill,
+.form-group select:-webkit-autofill:hover,
+.form-group select:-webkit-autofill:focus {
+  -webkit-text-fill-color: #f5efe6;
+  -webkit-box-shadow: 0 0 0 1000px rgba(74, 53, 48, 0.92) inset;
+  transition: background-color 9999s ease-in-out 0s;
 }
 
 /* QUOTE */
@@ -4578,6 +4635,7 @@ height:340px;
     max-width: 100%;
   }
 }
+
 /* =========================================================
    SECTION TRANSITION FIX (Paper → Stone)
    Adds depth between light and dark sections
