@@ -4698,7 +4698,7 @@ height:340px;
 
 .contact-info-panel .section-title,
 .contact-info-panel h2 {
-  color: #e2c49b;
+  color: #d8b78b;
   text-shadow: none;
 }
 
@@ -4706,15 +4706,15 @@ height:340px;
 .contact-info-panel > p,
 .contact-info-item a,
 .contact-info-item p {
-  color: rgba(232, 214, 190, 0.78);
+  color: rgba(222, 202, 177, 0.72);
 }
 
 .contact-info-label {
-  color: rgba(212, 177, 132, 0.58);
+  color: rgba(212, 177, 132, 0.52);
 }
 
 .contact-info-item {
-  border-bottom: 1px solid rgba(212, 177, 132, 0.11);
+  border-bottom: 1px solid rgba(212, 177, 132, 0.09);
 }
 
 /* =========================================================
