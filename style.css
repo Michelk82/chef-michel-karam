@@ -4692,6 +4692,30 @@ height:340px;
     width: 100%;
   }
 }
+/* =========================================================
+   CONTACT PANEL TONE-DOWN FIX
+========================================================= */
+
+.contact-info-panel .section-title,
+.contact-info-panel h2 {
+  color: #e2c49b;
+  text-shadow: none;
+}
+
+.contact-info-panel .section-text,
+.contact-info-panel > p,
+.contact-info-item a,
+.contact-info-item p {
+  color: rgba(232, 214, 190, 0.78);
+}
+
+.contact-info-label {
+  color: rgba(212, 177, 132, 0.58);
+}
+
+.contact-info-item {
+  border-bottom: 1px solid rgba(212, 177, 132, 0.11);
+}
 
 /* =========================================================
    SECTION TRANSITION FIX (Paper → Stone)
