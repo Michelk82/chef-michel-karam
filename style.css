@@ -1310,15 +1310,38 @@ textarea {
 }
 
 .footer-credit-link {
-  color: rgba(200, 161, 114, 0.9);
-  text-decoration: none;
-  border-bottom: 1px solid rgba(200, 161, 114, 0.4);
-  transition: 0.3s ease;
+  font-family: var(--font-body); /* stays consistent with footer */
+  color: rgba(200, 161, 114, 0.72);
+  letter-spacing: 0.06em;
+  position: relative;
+  transition: color 0.35s ease;
 }
 
+/* underline = elegant gold line, not default */
+.footer-credit-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0%;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    rgba(200, 161, 114, 0.0),
+    rgba(200, 161, 114, 0.7),
+    rgba(200, 161, 114, 0.0)
+  );
+  transition: width 0.35s ease;
+}
+
+/* hover = soft lift + glow, NOT aggressive */
 .footer-credit-link:hover {
-  color: #f0d8b0;
-  border-bottom: 1px solid rgba(200, 161, 114, 0.8);
+  color: #e6cfaa;
+}
+
+/* animated underline reveal */
+.footer-credit-link:hover::after {
+  width: 100%;
 }
 
 /* ---------- REVEAL ---------- */
