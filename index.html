@@ -3,21 +3,35 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" type="image/png" href="/favicon.png">
-<link rel="shortcut icon" href="/favicon.png">
+
+  <!-- Redirect /index.html to / -->
+  <script>
+    if (window.location.pathname.endsWith("/index.html")) {
+      window.location.replace("https://chefmichelkaram.com/");
+    }
+  </script>
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://chefmichelkaram.com/" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/favicon.png" />
+  <link rel="shortcut icon" href="/favicon.png" />
+  <link rel="icon" href="/assets/favicon/favicon.png" />
+  <link rel="apple-touch-icon" href="/assets/favicon/favicon.png" />
 
   <title>Chef Michel Karam | Executive Chef & Culinary Consultant</title>
 
-  <meta name="description" content="Executive Chef Michel Karam offering high-end culinary consulting, menu development, and hospitality expertise for restaurants, hotels, and private clients.">
-  <meta name="keywords" content="Chef Michel Karam, executive chef Lebanon, culinary consultant, restaurant consultant, menu development, hospitality expert">
-  <meta name="author" content="Chef Michel Karam">
-
-  <!-- Favicon -->
-  <link rel="icon" href="/assets/favicon/favicon.png">
-  <link rel="apple-touch-icon" href="/assets/favicon/favicon.png">
-
-  <!-- Theme color -->
-  <meta name="theme-color" content="#1C1C1C">
+  <meta
+    name="description"
+    content="Executive Chef Michel Karam offering high-end culinary consulting, menu development, and hospitality expertise for restaurants, hotels, and private clients."
+  />
+  <meta
+    name="keywords"
+    content="Chef Michel Karam, executive chef Lebanon, culinary consultant, restaurant consultant, menu development, hospitality expert"
+  />
+  <meta name="author" content="Chef Michel Karam" />
+  <meta name="theme-color" content="#1C1C1C" />
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -45,7 +59,7 @@
             <a href="portfolio.html">Portfolio</a>
           </nav>
 
-          <a href="index.html" class="hero-brand" aria-label="Michel Karam Home">
+          <a href="/" class="hero-brand" aria-label="Michel Karam Home">
             <img src="assets/Logo/mk-monogram.png" alt="Michel Karam monogram" />
           </a>
 
@@ -108,9 +122,9 @@
         <div class="about-preview-image reveal">
           <div class="portrait-circle">
             <img
-  src="assets/Chef/DSC_0033.JPG"
-  alt="photo"
-/>
+              src="assets/Chef/DSC_0033.JPG"
+              alt="photo"
+            />
           </div>
         </div>
 
@@ -302,13 +316,15 @@
       </div>
 
       <p class="footer-copy">
-  © Michel Karam. All rights reserved.
-  <br />
-  Structured by 
-  <a href="https://chassislb.com" target="_blank" rel="noopener" class="footer-credit-link">
-    Chassis
-  </a>
-</p>
+        © Michel Karam. All rights reserved.
+        <br />
+        Structured by
+        <a href="https://chassislb.com" target="_blank" rel="noopener" class="footer-credit-link">
+          Chassis
+        </a>
+      </p>
+    </div>
+  </footer>
 
   <script src="script.js"></script>
 </body>
