@@ -1344,6 +1344,10 @@ textarea {
   transform: translateY(-1px);
 }
 
+.footer-socials a:hover {
+  box-shadow: 0 0 12px rgba(200, 161, 114, 0.18);
+}
+
 .footer-copy {
   color: rgba(255, 255, 255, 0.45);
   font-size: 0.92rem;
